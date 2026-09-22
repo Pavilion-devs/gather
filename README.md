@@ -4,7 +4,7 @@
 
 **Check the plan. Before you pay deposits.**
 
-**[Try Gather](https://clever-boar-260.convex.site/)** · **[Watch the demo · 2:44](#demo-video)** · [Hackathon build log](hackathon.md)
+**[Try Gather](https://clever-boar-260.convex.site/)** · **[Watch the demo · 2:44](#demo-video)** · [Architecture](#architecture) · [Hackathon build log](hackathon.md)
 
 <!-- Replace the Watch the demo target above with the final X post URL when uploaded. -->
 
@@ -13,6 +13,7 @@
 - [Project overview](#project-overview)
 - [What Gather does](#what-gather-does)
 - [A plan that actually fits](#a-plan-that-actually-fits)
+- [Architecture](#architecture)
 - [External apps and services](#external-apps-and-services)
 - [How we used Convex](#how-we-used-convex)
 - [How we used OpenAI](#how-we-used-openai)
@@ -68,6 +69,16 @@ The demo follows **Founders' Dinner**, an illustrative event with real source im
 Only the new delivery time, pickup time and delivery charge are accepted. Existing durations and guest arrival stay unchanged. **Two timing clashes become zero**, with the reply and before/after calculations preserved.
 
 The venue's public rules inform explicitly reviewed planning assumptions. They do not confirm a booking or a supplier appointment. The demo shows a working review loop, not a completed real-world event.
+
+## Architecture
+
+[![Gather architecture: evidence ingestion, human review, deterministic plan checks and the supplier email loop](docs/architecture/gather-architecture.png)](docs/architecture/gather-architecture.png)
+
+**[View full-size PNG](docs/architecture/gather-architecture.png) · [Editable SVG](docs/architecture/gather-architecture.svg) · [Architecture walkthrough](docs/architecture/README.md)**
+
+Convex connects the event workspace, source ingestion, review, supplier email and report history. Firecrawl reads venue pages; OpenAI proposes cited facts; the organizer accepts selected changes; deterministic code checks the timing. Approved messages go through AgentMail, and imported replies return through the same review process.
+
+The diagram shows logical relationships. All Convex workflows share the database and file-storage layer; source progress and proposals reach the interface through reactive queries. Report sharing creates a separate, revocable snapshot after explicit confirmation.
 
 ## External apps and services
 
@@ -232,7 +243,7 @@ Waiting time is shortened for pacing. The event and supplier are illustrative; s
 - `tests/`: domain, provider, Convex and integration checks, plus authored source cases.
 - `scripts/`: local integration configuration, evaluation and deployment tools.
 - `public/`: application assets and the landing-page product clip.
-- `docs/`: deployment notes, verification evidence and the generated README banner.
+- `docs/`: architecture artwork and walkthrough, deployment notes, verification evidence and the generated README banner.
 - `hackathon.md`: build log, stack, live URL and submission links.
 
 Local credentials, development databases, raw recordings and video-render caches are excluded from the source repository.

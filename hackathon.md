@@ -54,6 +54,7 @@ This summary is drawn from the project's saved implementation and verification r
 - Improved landing-page copy and added an actual product-run video excerpt.
 - Produced a 2:44 demo with the landing-page intro, ElevenLabs narration, HyperFrames motion graphics, captions and a quiet music bed. The video remains under the three-minute limit; the X link is pending upload.
 - Prepared a README with a generated ImageGen banner, table of contents and implementation-linked sponsor sections.
+- Added an implementation-verified architecture diagram in editable SVG and PNG, with a walkthrough of the evidence, review and supplier-email loop. See [architecture](docs/architecture/README.md).
 - Connected the public GitHub repository and prepared the source package, excluding environment files, local databases and raw media workspaces.
 
 ## What the recorded example proves
