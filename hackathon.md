@@ -6,7 +6,7 @@
 - **Public repository:** https://github.com/Pavilion-devs/gather
 - **Demo:** [Watch the 2:44 video on X](https://x.com/olathepavilion/status/2102243994855997558).
 - **Social post:** [Published on X](https://x.com/olathepavilion/status/2102243994855997558) with @convex, @OpenAI, @firecrawl and @agentmail. [Architecture reply](https://x.com/olathepavilion/status/2102243998270202338).
-- **Submission:** not yet confirmed on vibeapps.dev.
+- **Vibe Apps listing:** [Gather](https://vibeapps.dev/s/gather), published September 22 with the app, repository, demo, screenshots and AllGasHackathon tag. Dedicated judging-form completion is still unconfirmed.
 
 ## What we built
 
@@ -54,6 +54,7 @@ This summary is drawn from the project's saved implementation and verification r
 - Prepared a README with a generated ImageGen banner, table of contents and implementation-linked sponsor sections.
 - Added an implementation-verified architecture diagram in editable SVG and PNG, with a walkthrough of the evidence, review and supplier-email loop. See [architecture](docs/architecture/README.md).
 - Connected the public GitHub repository and prepared the source package, excluding environment files, local databases and raw media workspaces.
+- Published the [Vibe Apps listing](https://vibeapps.dev/s/gather). The builder confirmed Luma registration. The dedicated judging form is prepared, but its LinkedIn field blocks submission even though its helper text says optional; judging inclusion still needs confirmation.
 
 ## What the recorded example proves
 
@@ -73,5 +74,6 @@ See [README limitations](README.md#current-limitations) and [deployment notes](d
 
 - [x] Upload the finished demo to X and link it from this file and README.
 - [x] Include the required sponsor tags in the social post.
-- [ ] Confirm Luma registration.
-- [ ] Submit the public repository, live app and demo links on vibeapps.dev before the official deadline.
+- [x] Confirm Luma registration (confirmed by the builder September 22).
+- [x] Publish the public repository, live app and demo links on Vibe Apps with the AllGasHackathon tag.
+- [ ] Confirm entry in the dedicated hackathon judging flow; resolve the form's required LinkedIn field.
