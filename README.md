@@ -4,9 +4,7 @@
 
 **Check the plan. Before you pay deposits.**
 
-**[Try Gather](https://clever-boar-260.convex.site/)** · **[Watch the demo · 2:44](#demo-video)** · [Architecture](#architecture) · [Hackathon build log](hackathon.md)
-
-<!-- Replace the Watch the demo target above with the final X post URL when uploaded. -->
+**[Try Gather](https://clever-boar-260.convex.site/)** · **[Watch the demo · 2:44](https://x.com/olathepavilion/status/2102243994855997558)** · [Architecture](#architecture) · [Hackathon build log](hackathon.md)
 
 ## Table of contents
 
@@ -227,9 +225,9 @@ For this project's configured deployment, `npm run deploy` builds the frontend, 
 
 ## Demo video
 
-**Watch the demo on X — link coming soon.**
+**[Watch the demo on X · 2:44](https://x.com/olathepavilion/status/2102243994855997558)**
 
-<!-- X_DEMO_URL: replace this placeholder and the top Watch the demo link after upload. -->
+[Architecture thread](https://x.com/olathepavilion/status/2102243998270202338)
 
 The **2:44** video opens on the landing page, then follows the actual product: import evidence → review facts → find two timing clashes → send a clarification → receive a reply → accept selected changes → compare the updated plan and its evidence.
 
