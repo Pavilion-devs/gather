@@ -4,7 +4,7 @@
 
 **Check the plan. Before you pay deposits.**
 
-**[Try Gather](https://clever-boar-260.convex.site/)** · **[Watch the demo · 2:44](https://x.com/olathepavilion/status/2102243994855997558)** · [Architecture](#architecture) · [Hackathon build log](hackathon.md)
+**[Try Gather](https://clever-boar-260.convex.site/)** · **[Watch the demo · 2:44](https://x.com/olathepavilion/status/2102243994855997558)** · [Hackathon entry](https://vibeapps.dev/s/gather-1) · [Architecture](#architecture) · [Hackathon build log](hackathon.md)
 
 ## Table of contents
 

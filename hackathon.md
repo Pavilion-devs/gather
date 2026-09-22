@@ -6,7 +6,7 @@
 - **Public repository:** https://github.com/Pavilion-devs/gather
 - **Demo:** [Watch the 2:44 video on X](https://x.com/olathepavilion/status/2102243994855997558).
 - **Social post:** [Published on X](https://x.com/olathepavilion/status/2102243994855997558) with @convex, @OpenAI, @firecrawl and @agentmail. [Architecture reply](https://x.com/olathepavilion/status/2102243998270202338).
-- **Vibe Apps listing:** [Gather](https://vibeapps.dev/s/gather), published September 22 with the app, repository, demo, screenshots and AllGasHackathon tag. Dedicated judging-form completion is still unconfirmed.
+- **Hackathon submission:** [Gather on Vibe Apps](https://vibeapps.dev/s/gather-1), submitted through the dedicated hackathon form on September 22 at 05:08 WAT. The published entry includes the automatic AllGasHackathonSubmission tag, sponsor tags, app, repository, demo, LinkedIn profile and three images.
 
 ## What we built
 
@@ -54,7 +54,7 @@ This summary is drawn from the project's saved implementation and verification r
 - Prepared a README with a generated ImageGen banner, table of contents and implementation-linked sponsor sections.
 - Added an implementation-verified architecture diagram in editable SVG and PNG, with a walkthrough of the evidence, review and supplier-email loop. See [architecture](docs/architecture/README.md).
 - Connected the public GitHub repository and prepared the source package, excluding environment files, local databases and raw media workspaces.
-- Published the [Vibe Apps listing](https://vibeapps.dev/s/gather). The builder confirmed Luma registration. The dedicated judging form is prepared, but its LinkedIn field blocks submission even though its helper text says optional; judging inclusion still needs confirmation.
+- Published an initial community listing, then completed the dedicated hackathon form after providing the builder's LinkedIn profile. The form created the [hackathon entry](https://vibeapps.dev/s/gather-1) with its automatic AllGasHackathonSubmission tag. This is the submission link to use; the earlier community listing remains at `/s/gather`. The builder confirmed Luma registration.
 
 ## What the recorded example proves
 
@@ -70,10 +70,10 @@ The hosted app supports sign-up without an invitation. Public visitors can view 
 
 See [README limitations](README.md#current-limitations) and [deployment notes](docs/deployment.md).
 
-## Remaining submission steps
+## Submission checklist
 
 - [x] Upload the finished demo to X and link it from this file and README.
 - [x] Include the required sponsor tags in the social post.
 - [x] Confirm Luma registration (confirmed by the builder September 22).
 - [x] Publish the public repository, live app and demo links on Vibe Apps with the AllGasHackathon tag.
-- [ ] Confirm entry in the dedicated hackathon judging flow; resolve the form's required LinkedIn field.
+- [x] Complete the dedicated hackathon submission form and verify the published entry with its automatic AllGasHackathonSubmission tag.
