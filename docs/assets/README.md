@@ -1,0 +1,7 @@
+# README artwork
+
+`gather-banner.png` was created with the built-in ImageGen tool on September 22, 2026. It is editorial artwork, not a screenshot of the application.
+
+## Generation prompt
+
+Create a polished wide GitHub README banner for Gather, an event-planning app. Landscape banner, approximately 3:1 aspect ratio (wide 1800x600 composition). Editorial, quiet premium SaaS art direction matching a cream/off-white #f8f8f2 interface with pale lilac #eae6f4 and pale sage accents, dark charcoal #252729 typography, soft natural shadows and restrained dimensionality. Composition: generous clear space on the left with beautifully typeset exact text 'Gather' large, and below in smaller clean sans-serif exactly 'Check the plan. Before you pay deposits.' On the right, a sophisticated sculptural paper still life: three slightly layered ivory event documents, a simple elegant clock dial and a folded lilac envelope, connected by one fine curved path ending at a discreet sage check mark. Suggest venue rules, timing and a supplier reply coming together, without drawing a fake dashboard, architecture diagram or dense UI. Crisp understated art direction, excellent spacing, readable title at small README size. No wedding-specific objects, no people, no confetti, no neon, no gradient lettering, no sponsor logos, no extra words, no borders. Finished raster artwork ready for the top of an open-source repository.

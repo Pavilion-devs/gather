@@ -1,0 +1,772 @@
+{
+  "ranAt": "2026-09-21T14:13:31.269Z",
+  "model": "gpt-5.6-luna",
+  "kind": "authored synthetic cases; not a real-world accuracy estimate",
+  "results": [
+    {
+      "id": "explicit-confirmation",
+      "pass": true,
+      "status": "review",
+      "expected": {
+        "delivery": 600,
+        "setup": 90,
+        "pickup": 1335,
+        "loading": 30,
+        "arrival": 720,
+        "accessStart": 540,
+        "accessEnd": 1380,
+        "fee": 125
+      },
+      "actual": {
+        "delivery": 600,
+        "setup": 90,
+        "pickup": 1335,
+        "loading": 30,
+        "arrival": 720,
+        "accessStart": 540,
+        "accessEnd": 1380,
+        "fee": 125
+      },
+      "errors": [],
+      "unchanged": true,
+      "notes": [
+        "All extracted facts are proposed, not accepted.",
+        "Facts are scoped to the Gather product launch on 24 October 2026 at The Glasshouse, in the Africa/Lagos event context provided."
+      ],
+      "usage": {
+        "cachedInputTokens": 0,
+        "inputTokens": 822,
+        "outputTokens": 398
+      },
+      "proposals": [
+        {
+          "field": "delivery",
+          "value": 600,
+          "quote": "Delivery will be complete at 10:00 am.",
+          "note": "Proposed delivery completion time for the specified event."
+        },
+        {
+          "field": "setup",
+          "value": 90,
+          "quote": "Setup requires 90 minutes after rental delivery is complete.",
+          "note": "Proposed setup duration after delivery completion."
+        },
+        {
+          "field": "pickup",
+          "value": 1335,
+          "quote": "Pickup starts at 10:15 pm;",
+          "note": "Proposed pickup start time."
+        },
+        {
+          "field": "loading",
+          "value": 30,
+          "quote": "pickup loading takes 30 minutes.",
+          "note": "Proposed pickup loading duration."
+        },
+        {
+          "field": "arrival",
+          "value": 720,
+          "quote": "Guests arrive at noon.",
+          "note": "Proposed guest arrival time."
+        },
+        {
+          "field": "accessStart",
+          "value": 540,
+          "quote": "Event venue access opens at 9 am.",
+          "note": "Proposed venue access start time."
+        },
+        {
+          "field": "accessEnd",
+          "value": 1380,
+          "quote": "All equipment must be removed by 11 pm.",
+          "note": "Proposed equipment-removal deadline."
+        },
+        {
+          "field": "fee",
+          "value": 125,
+          "quote": "Delivery charge: USD 125.",
+          "note": "Proposed delivery charge."
+        }
+      ]
+    },
+    {
+      "id": "conditional-free",
+      "pass": true,
+      "status": "review",
+      "expected": {},
+      "actual": {},
+      "errors": [],
+      "unchanged": true,
+      "notes": [
+        "All extracted facts are proposed, not accepted."
+      ],
+      "usage": {
+        "cachedInputTokens": 0,
+        "inputTokens": 797,
+        "outputTokens": 233
+      },
+      "proposals": [
+        {
+          "field": "delivery",
+          "value": null,
+          "quote": "Delivery completion may be 10:00 if the earlier job finishes on time. We cannot confirm that slot.",
+          "note": "The proposed delivery completion time is conditional and explicitly unconfirmed."
+        },
+        {
+          "field": "fee",
+          "value": null,
+          "quote": "Delivery is free only if the order exceeds USD 5,000. Your order total is not yet agreed.",
+          "note": "The delivery charge cannot be determined because the order total is not agreed; free delivery is conditional."
+        }
+      ]
+    },
+    {
+      "id": "currency-and-subtotal",
+      "pass": true,
+      "status": "review",
+      "expected": {
+        "delivery": 600
+      },
+      "actual": {
+        "delivery": 600
+      },
+      "errors": [],
+      "unchanged": true,
+      "notes": [
+        "The rental subtotal and refundable deposit are not delivery charges and were not extracted.",
+        "All extracted facts are proposed, not accepted."
+      ],
+      "usage": {
+        "cachedInputTokens": 0,
+        "inputTokens": 784,
+        "outputTokens": 410
+      },
+      "proposals": [
+        {
+          "field": "delivery",
+          "value": 600,
+          "quote": "Delivery will be complete at 10:00.",
+          "note": "Proposed delivery completion time on 24 October 2026; AM/PM is not stated, so interpreted as 10:00 in the event’s 24-hour local-time context."
+        },
+        {
+          "field": "pickup",
+          "value": null,
+          "quote": "",
+          "note": "Pickup start time is not stated."
+        },
+        {
+          "field": "setup",
+          "value": null,
+          "quote": "",
+          "note": "Setup duration after delivery is not stated."
+        },
+        {
+          "field": "loading",
+          "value": null,
+          "quote": "",
+          "note": "Pickup loading duration is not stated."
+        },
+        {
+          "field": "arrival",
+          "value": null,
+          "quote": "",
+          "note": "Guest arrival time is not stated."
+        },
+        {
+          "field": "accessStart",
+          "value": null,
+          "quote": "",
+          "note": "Venue access start time is not stated."
+        },
+        {
+          "field": "accessEnd",
+          "value": null,
+          "quote": "",
+          "note": "Equipment-removal deadline is not stated."
+        },
+        {
+          "field": "fee",
+          "value": null,
+          "quote": "Delivery charge GBP 180.",
+          "note": "Delivery charge is stated in GBP rather than USD, so the USD value is ambiguous and not converted."
+        }
+      ]
+    },
+    {
+      "id": "general-hours",
+      "pass": true,
+      "status": "review",
+      "expected": {},
+      "actual": {},
+      "errors": [],
+      "unchanged": true,
+      "notes": [
+        "The source is a general venue brochure, not a confirmed event-specific schedule.",
+        "Building opening hours of 08:00–23:00 are general venue hours and are not treated as event access or equipment-removal times.",
+        "The event package is unselected, so the package-specific access alternatives cannot be applied as confirmed facts."
+      ],
+      "usage": {
+        "cachedInputTokens": 0,
+        "inputTokens": 793,
+        "outputTokens": 419
+      },
+      "proposals": [
+        {
+          "field": "delivery",
+          "value": null,
+          "quote": "",
+          "note": "No delivery completion time is stated."
+        },
+        {
+          "field": "pickup",
+          "value": null,
+          "quote": "",
+          "note": "No pickup start time is stated."
+        },
+        {
+          "field": "setup",
+          "value": null,
+          "quote": "",
+          "note": "No setup duration after delivery is stated."
+        },
+        {
+          "field": "loading",
+          "value": null,
+          "quote": "",
+          "note": "No pickup loading duration is stated."
+        },
+        {
+          "field": "arrival",
+          "value": null,
+          "quote": "",
+          "note": "No guest arrival time is stated."
+        },
+        {
+          "field": "accessStart",
+          "value": null,
+          "quote": "",
+          "note": "The booked event package has not been selected. The brochure lists different access times for wedding and corporate packages, so no event-specific access start can be confirmed."
+        },
+        {
+          "field": "accessEnd",
+          "value": null,
+          "quote": "",
+          "note": "No equipment-removal deadline is stated. Music ending at 22:00 is not an explicit removal deadline."
+        },
+        {
+          "field": "fee",
+          "value": null,
+          "quote": "",
+          "note": "No delivery charge is stated."
+        }
+      ]
+    },
+    {
+      "id": "arrival-not-completion",
+      "pass": true,
+      "status": "review",
+      "expected": {
+        "arrival": 720
+      },
+      "actual": {
+        "arrival": 720
+      },
+      "errors": [],
+      "unchanged": true,
+      "notes": [
+        "Facts are proposed for the Gather product launch on 24 October 2026 at The Glasshouse; acceptance is not stated.",
+        "The source states a truck arrival at 09:30, but unloading varies and delivery completion is not guaranteed."
+      ],
+      "usage": {
+        "cachedInputTokens": 0,
+        "inputTokens": 797,
+        "outputTokens": 460
+      },
+      "proposals": [
+        {
+          "field": "delivery",
+          "value": null,
+          "quote": "The truck will arrive at 09:30. Unloading time varies and no delivery completion time is guaranteed.",
+          "note": "The source gives truck arrival, not completed delivery; no delivery completion time is guaranteed."
+        },
+        {
+          "field": "pickup",
+          "value": null,
+          "quote": "",
+          "note": "No pickup start time is stated."
+        },
+        {
+          "field": "setup",
+          "value": null,
+          "quote": "The catering team needs 45 minutes of prep before leaving their kitchen.",
+          "note": "This is prep before leaving the kitchen, not setup required after rental delivery."
+        },
+        {
+          "field": "loading",
+          "value": null,
+          "quote": "",
+          "note": "No pickup loading duration is stated."
+        },
+        {
+          "field": "arrival",
+          "value": 720,
+          "quote": "Guests arrive at 12:00.",
+          "note": "Guest arrival is stated as 12:00 local time on the event date."
+        },
+        {
+          "field": "accessStart",
+          "value": null,
+          "quote": "",
+          "note": "No event venue access start time is stated."
+        },
+        {
+          "field": "accessEnd",
+          "value": null,
+          "quote": "",
+          "note": "No equipment-removal deadline is stated."
+        },
+        {
+          "field": "fee",
+          "value": null,
+          "quote": "",
+          "note": "No delivery charge is stated."
+        }
+      ]
+    },
+    {
+      "id": "range-and-ambiguity",
+      "pass": true,
+      "status": "review",
+      "expected": {},
+      "actual": {},
+      "errors": [],
+      "unchanged": true,
+      "notes": [
+        "All extracted information is proposed, not accepted. The source confirms the event, date, and venue but does not provide a single unambiguous value for the ranged or AM/PM-ambiguous times."
+      ],
+      "usage": {
+        "cachedInputTokens": 0,
+        "inputTokens": 791,
+        "outputTokens": 358
+      },
+      "proposals": [
+        {
+          "field": "delivery",
+          "value": null,
+          "quote": "Delivery complete between 09:00 and 11:00.",
+          "note": "Null because the source gives a time range rather than one clear completion time."
+        },
+        {
+          "field": "pickup",
+          "value": null,
+          "quote": "Pickup starts at 8 (we have not specified AM or PM).",
+          "note": "Null because AM or PM is unspecified."
+        },
+        {
+          "field": "loading",
+          "value": null,
+          "quote": "Loading duration is between 20 and 40 minutes.",
+          "note": "Null because the source gives a duration range."
+        },
+        {
+          "field": "setup",
+          "value": null,
+          "quote": "",
+          "note": "Not stated."
+        },
+        {
+          "field": "arrival",
+          "value": null,
+          "quote": "",
+          "note": "Not stated."
+        },
+        {
+          "field": "accessStart",
+          "value": null,
+          "quote": "",
+          "note": "Not stated."
+        },
+        {
+          "field": "accessEnd",
+          "value": null,
+          "quote": "",
+          "note": "Not stated."
+        },
+        {
+          "field": "fee",
+          "value": null,
+          "quote": "",
+          "note": "Not stated."
+        }
+      ]
+    },
+    {
+      "id": "contradictory-times",
+      "pass": true,
+      "status": "review",
+      "expected": {
+        "fee": 100
+      },
+      "actual": {
+        "fee": 100
+      },
+      "errors": [],
+      "unchanged": true,
+      "notes": [
+        "All extracted facts are proposed, not accepted. The source identifies the event as the Gather product launch on 24 October 2026 at The Glasshouse."
+      ],
+      "usage": {
+        "cachedInputTokens": 0,
+        "inputTokens": 796,
+        "outputTokens": 406
+      },
+      "proposals": [
+        {
+          "field": "delivery",
+          "value": null,
+          "quote": "Supplier booking sheet says delivery will be complete at 10:00. The same current signed sheet also says delivery will be complete at 11:30. Neither is marked superseded.",
+          "note": "Conflicting delivery completion times are stated, and neither is marked superseded; the times are ambiguous."
+        },
+        {
+          "field": "pickup",
+          "value": null,
+          "quote": "",
+          "note": "No pickup start time is stated."
+        },
+        {
+          "field": "setup",
+          "value": null,
+          "quote": "",
+          "note": "No setup duration after delivery completion is stated."
+        },
+        {
+          "field": "loading",
+          "value": null,
+          "quote": "",
+          "note": "No pickup loading duration is stated."
+        },
+        {
+          "field": "arrival",
+          "value": null,
+          "quote": "",
+          "note": "No guest arrival time is stated."
+        },
+        {
+          "field": "accessStart",
+          "value": null,
+          "quote": "",
+          "note": "No event venue access start time is stated."
+        },
+        {
+          "field": "accessEnd",
+          "value": null,
+          "quote": "",
+          "note": "No equipment-removal deadline is stated."
+        },
+        {
+          "field": "fee",
+          "value": 100,
+          "quote": "Delivery charge USD 100.",
+          "note": "Proposed delivery charge for this booking."
+        }
+      ]
+    },
+    {
+      "id": "superseded-chain",
+      "pass": true,
+      "status": "review",
+      "expected": {
+        "pickup": 1335
+      },
+      "actual": {
+        "pickup": 1335
+      },
+      "errors": [],
+      "unchanged": true,
+      "notes": [
+        "All extracted facts are proposed, not accepted.",
+        "The older quoted pickup time of 23:30 and delivery charge of USD 200 are not used because the current text provides an updated pickup time and says the delivery charge is unconfirmed.",
+        "No current source facts establish setup duration, pickup loading duration, guest arrival time, venue access start time, or equipment removal deadline."
+      ],
+      "usage": {
+        "cachedInputTokens": 0,
+        "inputTokens": 811,
+        "outputTokens": 449
+      },
+      "proposals": [
+        {
+          "field": "pickup",
+          "value": 1335,
+          "quote": "Our updated pickup starts at 22:15.",
+          "note": "Proposed current pickup start for the event; 22:15 = 1335 minutes after midnight."
+        },
+        {
+          "field": "fee",
+          "value": null,
+          "quote": "We cannot yet confirm the delivery charge.",
+          "note": "Delivery charge is unconfirmed; the USD 200 amount appears only in an older quoted message and is not treated as current."
+        },
+        {
+          "field": "delivery",
+          "value": null,
+          "quote": "",
+          "note": "The only delivery completion time appears in an older quoted supplier message, not in the current sender's new text, so it is not treated as current."
+        }
+      ]
+    },
+    {
+      "id": "different-event",
+      "pass": true,
+      "status": "review",
+      "expected": {},
+      "actual": {},
+      "errors": [],
+      "unchanged": true,
+      "notes": [
+        "All facts in the source are proposed only and cannot be applied to the Gather product launch."
+      ],
+      "usage": {
+        "cachedInputTokens": 0,
+        "inputTokens": 784,
+        "outputTokens": 380
+      },
+      "proposals": [
+        {
+          "field": "delivery",
+          "value": null,
+          "quote": "",
+          "note": "The source concerns a different booking (Mira birthday at River Hall on 25 October 2026), explicitly unrelated to the Gather product launch."
+        },
+        {
+          "field": "pickup",
+          "value": null,
+          "quote": "",
+          "note": "The stated pickup time belongs to a booking explicitly unrelated to the Gather product launch."
+        },
+        {
+          "field": "setup",
+          "value": null,
+          "quote": "",
+          "note": "No setup duration for the Gather product launch is provided."
+        },
+        {
+          "field": "loading",
+          "value": null,
+          "quote": "",
+          "note": "No pickup loading duration for the Gather product launch is provided."
+        },
+        {
+          "field": "arrival",
+          "value": null,
+          "quote": "",
+          "note": "No guest arrival time for the Gather product launch is provided."
+        },
+        {
+          "field": "accessStart",
+          "value": null,
+          "quote": "",
+          "note": "No venue access start time for the Gather product launch is provided."
+        },
+        {
+          "field": "accessEnd",
+          "value": null,
+          "quote": "",
+          "note": "No equipment-removal deadline for the Gather product launch is provided."
+        },
+        {
+          "field": "fee",
+          "value": null,
+          "quote": "",
+          "note": "The stated USD 75 delivery charge belongs to a booking explicitly unrelated to the Gather product launch."
+        }
+      ]
+    },
+    {
+      "id": "next-day",
+      "pass": true,
+      "status": "review",
+      "expected": {
+        "delivery": 600
+      },
+      "actual": {
+        "delivery": 600
+      },
+      "errors": [],
+      "unchanged": true,
+      "notes": [
+        "All extracted facts are proposed, not accepted. The source identifies the event as the Gather product launch on 24 October 2026 at The Glasshouse."
+      ],
+      "usage": {
+        "cachedInputTokens": 0,
+        "inputTokens": 798,
+        "outputTokens": 526
+      },
+      "proposals": [
+        {
+          "field": "delivery",
+          "value": 600,
+          "quote": "Delivery will be complete at 10:00 on 24 October.",
+          "note": "Proposed delivery completion time on the event date."
+        },
+        {
+          "field": "pickup",
+          "value": null,
+          "quote": "Pickup begins at 01:00 on 25 October (the next day).",
+          "note": "The pickup is explicitly on the next day, so it cannot be represented as minutes after midnight on the event date without inferring a date adjustment."
+        },
+        {
+          "field": "accessEnd",
+          "value": null,
+          "quote": "All equipment must be removed by 02:00 on 25 October.",
+          "note": "The removal deadline is explicitly on the next day, so it cannot be represented as minutes after midnight on the event date without inferring a date adjustment."
+        },
+        {
+          "field": "setup",
+          "value": null,
+          "quote": "",
+          "note": "Not stated."
+        },
+        {
+          "field": "loading",
+          "value": null,
+          "quote": "",
+          "note": "Not stated."
+        },
+        {
+          "field": "arrival",
+          "value": null,
+          "quote": "",
+          "note": "Not stated."
+        },
+        {
+          "field": "accessStart",
+          "value": null,
+          "quote": "",
+          "note": "Not stated."
+        },
+        {
+          "field": "fee",
+          "value": null,
+          "quote": "",
+          "note": "No delivery charge is stated."
+        }
+      ]
+    },
+    {
+      "id": "free-vs-midnight",
+      "pass": true,
+      "status": "review",
+      "expected": {
+        "fee": 0,
+        "pickup": 1380
+      },
+      "actual": {
+        "fee": 0,
+        "pickup": 1380
+      },
+      "errors": [],
+      "unchanged": true,
+      "notes": [
+        "All extracted facts are proposed, not accepted.",
+        "Source scope: Gather product launch on 24 October 2026 at The Glasshouse, Africa/Lagos."
+      ],
+      "usage": {
+        "cachedInputTokens": 0,
+        "inputTokens": 779,
+        "outputTokens": 424
+      },
+      "proposals": [
+        {
+          "field": "fee",
+          "value": 0,
+          "quote": "Delivery is free: USD 0.",
+          "note": "Proposed delivery charge for the Gather product launch."
+        },
+        {
+          "field": "pickup",
+          "value": 1380,
+          "quote": "Pickup starts at 11:00 pm.",
+          "note": "Proposed pickup start time on 24 October 2026, local venue time."
+        },
+        {
+          "field": "delivery",
+          "value": null,
+          "quote": "",
+          "note": "Delivery completion time is explicitly unconfirmed."
+        },
+        {
+          "field": "setup",
+          "value": null,
+          "quote": "",
+          "note": "No setup duration is stated."
+        },
+        {
+          "field": "loading",
+          "value": null,
+          "quote": "",
+          "note": "No pickup loading duration is stated."
+        },
+        {
+          "field": "arrival",
+          "value": null,
+          "quote": "",
+          "note": "No guest arrival time is stated."
+        },
+        {
+          "field": "accessStart",
+          "value": null,
+          "quote": "",
+          "note": "No venue access start time is stated."
+        },
+        {
+          "field": "accessEnd",
+          "value": null,
+          "quote": "",
+          "note": "No equipment-removal deadline is stated."
+        }
+      ]
+    },
+    {
+      "id": "quoted-instructions",
+      "pass": true,
+      "status": "review",
+      "expected": {
+        "delivery": 600
+      },
+      "actual": {
+        "delivery": 600
+      },
+      "errors": [],
+      "unchanged": true,
+      "notes": [
+        "The embedded template instruction is untrusted source content and is not treated as a booking term or instruction.",
+        "All extracted facts are proposed, not accepted."
+      ],
+      "usage": {
+        "cachedInputTokens": 0,
+        "inputTokens": 799,
+        "outputTokens": 132
+      },
+      "proposals": [
+        {
+          "field": "delivery",
+          "value": 600,
+          "quote": "Delivery will be complete at 10:00.",
+          "note": "Proposed delivery completion time on the event date; local time per event context."
+        },
+        {
+          "field": "fee",
+          "value": null,
+          "quote": "Delivery charge has not been agreed.",
+          "note": "Delivery charge is unknown; no amount or currency-confirmed fee is stated."
+        }
+      ]
+    }
+  ],
+  "passed": 12,
+  "total": 12,
+  "usage": {
+    "inputTokens": 9551,
+    "outputTokens": 4595
+  }
+}
