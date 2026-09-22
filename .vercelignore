@@ -1,0 +1,8 @@
+.env*
+.convex
+.local
+node_modules
+design
+docs
+tests
+scripts
